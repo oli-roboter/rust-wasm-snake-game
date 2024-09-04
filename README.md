@@ -79,3 +79,15 @@ Unless you explicitly state otherwise, any contribution intentionally
 submitted for inclusion in the work by you, as defined in the Apache-2.0
 license, shall be dual licensed as above, without any additional terms or
 conditions.
+
+<h1><code>Snake Game Instructions</code></h1>
+
+## Running in development mode
+
+Cd into the `www` folder and run `npm run build:dev`. This is goig to compile the rust code in the `public` folder (files with the `.wasm` extension). This will also simultaneously start the development server as specified in the `webpack.config.js` file.
+
+Open your browser on `http://localhost:8080/` and the game should show
+
+## Running in production mode
+
+Cd into the `www` folder and run `npm run build`. This is goig to build the application as specified in the `webpack.config.js` file. Then go to the root server and type `npm start`, which will start an express server (configured in the `server` folder) that will serve the application on `http://localhost:3000/`
